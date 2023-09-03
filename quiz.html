@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>quiz</title>
+    </head>
+    <body>
+        
+        <h1>Who founded ferrari?</h1>
+        
+        <button onclick="wrong()" style="font-size: 30px; background-color: aqua; border-radius: 25px;">Ferrari Enzo</button>
+        <br>
+        <button onclick="correct()" style="font-size: 30px; background-color: aqua; border-radius: 25px;">Enzo Ferrari</button>
+        <br>
+        <button onclick="wrong()" style="font-size: 30px; background-color: aqua; border-radius: 25px;">Papa Ferrari</button>
+        <br>
+        <button onclick="wrong()" style="font-size: 30px; background-color: aqua; border-radius: 25px;">Luigi Enzo</button>
+
+        <p id="question1">who is it?</p>
+
+        <script>
+            function wrong(){
+                document.getElementById("question1").innerHTML = "Wrong! It was Enzo Ferrari"
+            }
+
+            function correct(){
+                document.getElementById("question1").innerHTML = "Correct! Thanks for paying attention!"
+            }
+
+        </script>
+
+
+    </body>
+</html>
